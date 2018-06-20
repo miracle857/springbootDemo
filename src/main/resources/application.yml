@@ -1,0 +1,26 @@
+
+server:
+  port: 8090
+
+my:
+  servers:
+    - dev.example.com  #  -  开头表示数组
+    - another.example.com
+
+application:
+  redis:
+    host: 182.254.136.99
+    pwd: maoxinhuan
+    port: 6379
+    timeout: 5000
+  mysql:
+    driver: com.mysql.jdbc.Driver
+    host: 115.159.82.98
+    port: 3306
+    database: weibo
+    user: root
+    password: 8200506
+    url: jdbc:mysql://${host}:${port}/${database}?characterEncoding=utf-8&autoReconnect=true
+
+
+
